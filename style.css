@@ -1,0 +1,212 @@
+/*font-family: 'Codystar', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Press Start 2P', cursive;*/
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(247, 98, 247); 
+    
+
+}
+
+#background {
+   background-color: black;
+}
+
+
+
+html {
+  background-color: black;
+  text-align: center;
+}
+
+body {
+   
+    text-align: center;
+    background-color: black;
+}
+
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+
+
+#app {
+    height: 100%;
+    padding-bottom: 15%;
+    padding-top: 2%;
+    text-align: center;
+    background-color: black;
+    
+    background-image: url("space.jpg");
+    background-repeat: repeat;
+    background-size:cover;
+
+}
+
+.title {
+  padding-bottom: 60px;
+  padding-top: 20px;
+  font-size: 75px;
+
+}
+
+
+h1 {
+    padding-bottom: 5%; 
+    font-size: 100px;
+
+}  
+
+
+
+
+#buttonBackground {
+  background-color: #cccccc;
+  
+}
+
+h3 {
+  
+    padding-bottom: 40px;
+
+}
+
+#guesses h3 {
+  
+    padding-bottom: 5px;
+
+}
+
+#input-parent {
+    padding-bottom: 60px;
+    border-radius: 50;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-left: 115px;
+    
+    
+}
+
+#player-input {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 75px;
+    border-color:gray;
+    border-width: 2px;
+}
+
+#submitGuess {
+    position: relative;
+    top: 75px;
+    right: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+    height: 90px;
+    
+}
+
+#gameZone {
+    margin: 0 auto;
+}
+
+.guess {
+  display: inline-block;
+  border: 2px solid slategrey;
+  font-size: 40px; 
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+  color: black;
+  background-color: lightblue; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+#menu-btns {
+  padding-top: 20px;
+
+}
+
+
+footer {
+    width: 100% vw;
+    height: 60px;
+    /*border-top: solid 2px rgb(187, 19, 19);*/
+    position: static;
+    bottom: 0;
+    padding: 2%;
+    background-color: black; 
+    display: block;
+   
+    
+}
+
+#tag {
+    display: inline;
+    margin: 0 auto;
+    background-color: black; 
+    width: 100% vw;
+
+} 
+
+
+img {
+    /*display: inline;*/
+    max-height : 60px;
+    display: block;
+    margin: 0 auto;
+
+  
+}
+
+#vertCenter {
+    padding-top: 15px;
+}
+
+h5 {
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    background-color: black; 
+
+}
+
+input {
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+  
+
+  
+
+  
+   
+ 
+
+
+
+
+
+
+
+
