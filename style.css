@@ -95,6 +95,7 @@ img {
     background-color: lightblue;
     font-size: 15px;
     color: black;
+    border-color: gray;
   
 
 }
@@ -125,10 +126,17 @@ body {
 }
 
 
-#buttonBackground {
+
+  #reset {
     background-color: #cccccc;
     margin-bottom: 50px;
-    
+
+  }
+
+  #hint {
+    background-color: #cccccc;
+    margin-bottom: 50px;
+
   }
 
 
