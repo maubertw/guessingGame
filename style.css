@@ -3,128 +3,19 @@ font-family: 'Londrina Outline', cursive;
 font-family: 'Press Start 2P', cursive;*/
 
 * {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     color: rgb(247, 98, 247); 
-    
-
 }
 
-#background {
-   background-color: black;
-}
-
-
-
-html {
-  background-color: black;
-  text-align: center;
-}
-
-body {
-   
-    text-align: center;
-    background-color: black;
-}
 
 
 .center {
     text-align: center;
-    margin: 0 auto;
-    
 }
-
-
-
-#app {
-    height: 100%;
-    padding-bottom: 15%;
-    padding-top: 2%;
-    text-align: center;
-    background-color: black;
-    
-    background-image: url("space.jpg");
-    background-repeat: repeat;
-    background-size:cover;
-
-}
-
-.title {
-  padding-bottom: 60px;
-  padding-top: 20px;
-  font-size: 75px;
-
-}
-
 
 h1 {
-    padding-bottom: 5%; 
-    font-size: 100px;
+   margin-top: 40px;
 
-}  
-
-
-
-
-#buttonBackground {
-  background-color: #cccccc;
-  
-}
-
-h3 {
-  
-    padding-bottom: 40px;
-
-}
-
-#guesses h3 {
-  
-    padding-bottom: 5px;
-
-}
-
-#input-parent {
-    padding-bottom: 60px;
-    border-radius: 50;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    padding-left: 115px;
-    
-    
-}
-
-#player-input {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    font-size: 75px;
-    border-color:gray;
-    border-width: 2px;
-}
-
-#submitGuess {
-    position: relative;
-    top: 75px;
-    right: 100px;
-    background-color: lightblue;
-    border-radius: 50%;
-    height: 90px;
-    
-}
-
-#gameZone {
-    margin: 0 auto;
-}
-
-.guess {
-  display: inline-block;
-  border: 2px solid slategrey;
-  font-size: 40px; 
-  padding: 10px;
-  padding-left: 15px;
-  border-radius: 10px;
-  color: black;
-  background-color: lightblue; 
 }
 
 ul {
@@ -132,76 +23,127 @@ ul {
     padding: 0;
 }
 
+img {
+    /*display: inline;
+    width: 200px;
+    height: 100px;*/
 
-#menu-btns {
-  padding-top: 20px;
-
+    max-height : 40px;
+    display: inline;
+    margin: 0 auto;
 }
 
+#tags {
 
-footer {
-    width: 100% vw;
-    height: 60px;
-    /*border-top: solid 2px rgb(187, 19, 19);*/
-    position: static;
-    bottom: 0;
-    padding: 2%;
-    background-color: black; 
-    display: block;
-   
+    padding-right: 85px;
+    padding-bottom: 50px;
+
     
 }
 
-#tag {
-    display: inline;
-    margin: 0 auto;
-    background-color: black; 
-    width: 100% vw;
+#mary {
 
-} 
-
-
-img {
-    /*display: inline;*/
-    max-height : 60px;
-    display: block;
-    margin: 0 auto;
-
-  
-}
-
-#vertCenter {
-    padding-top: 15px;
-}
-
-h5 {
-    padding-bottom: 20px;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    background-color: black; 
-
-}
-
-input {
-    border-radius: 50%;
-
-}
-
-
-
-
-
-
-  
-
-  
-
-  
+    font-family: 'helvetica'; 
+    color: black;
+    font-size: 15px;
+    font-variant: small-caps;
    
- 
+}
+
+#footer {
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.guess {
+    /*display: inline;
+    font-size: 60px;
+    border: 1px solid black; 
+   
+    
+    background-color: white;*/
+
+    display: inline-block;
+    border: 2px solid slategrey;
+    border-radius: 10%;
+    padding: 8px;
+    font-size: 30px; 
+    color: black;
+    background-color: lightblue; 
+}
+
+#player-input {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    font-size: 60px;
+    border-color:gray;
+    border-width: 2px;
+   
+}
+
+#submit {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    background-color: lightblue;
+    font-size: 15px;
+    color: black;
+  
+
+}
+
+#input-parent {
+    width: 160px;
+    margin: 5% auto 50px;
+    position: relative;
+}
+
+body {
+    background-image: url('binary.jpg');
+}
+
+.shadow {
+    box-shadow: 2px 2px 2px darkgray
+}
+
+#app {
+    width: 75%;
+    height: 75%;
+    margin: 50px auto;
+    /*background-color: rgba(256, 256, 256, 0.5);*/
+
+    background-image: url("space.jpg");
+    background-repeat: repeat;
+    background-size:cover;
+}
+
+
+#buttonBackground {
+    background-color: #cccccc;
+    margin-bottom: 50px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
