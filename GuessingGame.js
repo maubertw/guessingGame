@@ -39,7 +39,7 @@ Game.prototype.isLower = function(){
 
 
 Game.prototype.playersGuessSubmission = function(num){
-    if(num <= 0 || num > 100 || num === 'not a number'){
+    if(num <= 0 || num > 100 || isNaN(num)){
       throw 'That is an invalid guess.'
     }else if(this.pastGuesses.length >= 5 || this.pastGuesses.includes(this.winningNumber)){
       alert('press reset button for a new game!');  
@@ -79,9 +79,13 @@ Game.prototype.checkGuess = function(num){
   }
 
 Game.prototype.provideHint = function(){
-    var hint = [this.winningNumber, generateWinningNumber(), generateWinningNumber()];
-    return shuffle(hint);
-}  
+    if(this.pastGuesses.includes(this.winningNumber)){
+      alert('press reset button for a new game!'); 
+    }else{
+      var hint = [this.winningNumber, generateWinningNumber(), generateWinningNumber()];
+      return shuffle(hint);
+    }
+  }  
 
 Game.prototype.hiLow =  function(num){
   var win = this.winningNumber;
@@ -100,6 +104,7 @@ Game.prototype.hiLow =  function(num){
 
 $(document).ready(function() { 
   var game = newGame();
+  
   var turn = function(){ 
     var len = game.pastGuesses.length; 
     var guess = +$('#player-input').val();
@@ -108,22 +113,27 @@ $(document).ready(function() {
       $('.guess').eq(len).text(guess);
       $('#subtitle').text(game.hiLow(guess));
     };
-  $('#submit').on('click', function(){
+  
+    $('#submit').on('click', function(){
     turn();
   });
+  
   $(document).keypress(function(e) {
     if(e.which == 13) {
      turn();    
     }
   });
+  
   $('#hint').on('click', function(){
-    $('h1').text(game.provideHint());
-    $('#subtitle').text('A galaxy of guesses!  Which one is yours?')
-  });
+    if(!game.pastGuesses.includes(game.winningNumber)){
+      $('h1').text(game.provideHint());
+      $('#subtitle').text('A galaxy of guesses!  Which one is yours?')
+    } 
+   });
+  
   $('#reset').on('click', function(){
     location.reload();
   });
-
 });
 
 
